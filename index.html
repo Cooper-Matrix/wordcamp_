@@ -38,7 +38,7 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container text-sm-center pt-5">
     <h1 class="display-4"> A One-day Conference About WordPress</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <p class="lead">Welcome!</p>
   </div>
 </div>
 
@@ -82,85 +82,98 @@
 </div>
 
 <div class="container">
-  <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
+  <h1 class="display-4 text-center my-5 text-muted"><!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal">
+      Register Now
+    </button>
+    </h1>
   <!-- Form -->
-  <!-- Form -->
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <form>
-        <div class="form-group">
-          <label for="fullName">Full Name</label>
-          <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="jobRole">Job Role</label>
-          <select class="form-control" id="jobRole">
-            <option>Web Developer</option>
-            <option>Designer</option>
-            <option>Content Creator</option>
-            <option>Marketer</option>
-            <option>Business Owner</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="creditCard">Credit Card Number</label>
-          <input type="text" class="form-control" id="creditCard" placeholder="Enter credit card number">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="expiryDate">Expiry Date</label>
-            <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+ <!-- Modal -->
+<div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registrationModalLabel">Registration Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Registration Form -->
+        <form>
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
           </div>
-          <div class="form-group col-md-6">
-            <label for="cvv">CVV</label>
-            <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-        </div>
-        <div class="form-group">
-          <label>Which topic interests you most?</label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-            <label class="form-check-label" for="defaultCheck2">
-              WooCommerce: E-commerce platform
-            </label>
+          <div class="form-group">
+            <label for="jobRole">Job Role</label>
+            <select class="form-control" id="jobRole">
+              <option>Web Developer</option>
+              <option>Designer</option>
+              <option>Content Creator</option>
+              <option>Marketer</option>
+              <option>Business Owner</option>
+            </select>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-            <label class="form-check-label" for="defaultCheck3">
-              Hosting: Managed web hosting
-            </label>
+          <div class="form-group">
+            <label for="creditCard">Credit Card Number</label>
+            <input type="text" class="form-control" id="creditCard" placeholder="Enter credit card number">
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-            <label class="form-check-label" for="defaultCheck4">
-              Themes: Creating your theme
-            </label>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="expiryDate">Expiry Date</label>
+              <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="cvv">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+            </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-            <label class="form-check-label" for="defaultCheck5">
-              Plugins: Develop your plugin
-            </label>
+          <div class="form-group">
+            <label>Which topic interests you most?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                WooCommerce: E-commerce platform
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+              <label class="form-check-label" for="defaultCheck3">
+                Hosting: Managed web hosting
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+              <label class="form-check-label" for="defaultCheck4">
+                Themes: Creating your theme
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+              <label class="form-check-label" for="defaultCheck5">
+                Plugins: Develop your plugin
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+              <label class="form-check-label" for="defaultCheck6">
+                Content: Writing and podcasts
+              </label>
+            </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
-            <label class="form-check-label" for="defaultCheck6">
-              Content: Writing and podcasts
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Submit</button>
-      </form>
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
-<!-- /Form -->
+
 
 <!-- Alert -->
 <div class="container mt-4">
@@ -222,4 +235,16 @@
         </div>
       </div>
     </div>
-    <!-- /footer -->
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+<script>
+  // Attach click event listener to the button to open the modal
+  $(document).ready(function(){
+    $('#openModalBtn').click(function(){
+      $('#registrationModal').modal('show');
+    });
+  });
+</script>
+</body>
+</html>
