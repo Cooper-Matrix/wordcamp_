@@ -5,7 +5,7 @@ $btn-background-color: #38a6ac;
 $btn-border-color: #38a6ac;
 $btn-text-color: #fff;
 
-// Nested styles
+// Existing CSS code
 .jumbotron {
   position: relative;
   background-image: url('Images/image_1.avif');
@@ -31,7 +31,6 @@ $btn-text-color: #fff;
   }
 }
 
-// Navbar
 .navbar {
   background-color: $primary-color !important;
   
@@ -49,7 +48,6 @@ $btn-text-color: #fff;
   }
 }
 
-// Buttons
 .btn-primary {
   font-size: 24px;
   padding: 15px 30px;
@@ -62,7 +60,6 @@ $btn-text-color: #fff;
   }
 }
 
-// Container links
 .container .nav-link {
   color: $primary-color;
   
@@ -71,7 +68,6 @@ $btn-text-color: #fff;
   }
 }
 
-// Container buttons
 .container .nav-link.btn {
   background-color: $primary-color;
   border-color: $primary-color;
@@ -83,12 +79,10 @@ $btn-text-color: #fff;
   }
 }
 
-// Modal
 .modal-content {
   background: linear-gradient(to right, #94edf7, #ffffff);
 }
 
-// About section
 .about-section {
   background-color: #f8f9fa;
   padding: 3rem 0;
@@ -102,7 +96,6 @@ $btn-text-color: #fff;
   }
 }
 
-// Speakers section
 .speakers-section {
   background-color: $primary-color;
   color: #fff;
@@ -113,7 +106,6 @@ $btn-text-color: #fff;
   }
 }
 
-// Schedule section
 .schedule-section {
   background-color: #343a40;
   color: #fff;
@@ -124,7 +116,6 @@ $btn-text-color: #fff;
   }
 }
 
-// Form
 .form-container {
   background-color: #fff;
   border-radius: 10px;
@@ -136,7 +127,6 @@ $btn-text-color: #fff;
   }
 }
 
-// Footer
 footer {
   background-color: #222;
   color: #fff;
